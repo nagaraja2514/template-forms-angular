@@ -1,0 +1,46 @@
+ /* *{
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+
+
+body{
+    display: flex;
+}
+
+.login1{
+    text-align: center;
+   
+   
+    border-radius: 15px;
+    width: auto;
+    line-height: 30px;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+    border: green solid 1px;
+    margin-left: 400px;
+    margin-right: 400px; 
+
+}
+ p{
+     text-align: center;
+ }
+ button{
+     text-align: center;
+     width: 100px;
+     margin-left: 40px;
+ }
+ ::placeholder{
+     padding: 10px;
+ }
+ input{
+     padding: 10px;
+     border-radius: 10px;
+ }
+   */
+   .nav1{
+       text-align: center;
+   }

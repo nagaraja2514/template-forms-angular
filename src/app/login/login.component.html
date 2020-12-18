@@ -1,0 +1,51 @@
+<form name="loginForm" #loginForm="ngForm" (ngSubmit)="handleForm()">
+
+  <div class="login1">
+    <h1><b>Login</b> </h1><br>
+
+    <div><input type="text" name="username" #n=ngModel [(ngModel)]="deta.name" placeholder="User Name" required><br>
+      <span *ngIf="n.touched && n.invalid">please fill the name</span>
+    </div>
+    <div>
+      <input type="password"#b=ngModel name="password" [(ngModel)]="deta.password" placeholder="Password" required><br>
+      <span *ngIf="b.touched && b.invalid">please fill the password</span>
+    </div>
+
+    <!-- <div>
+      {{name}}
+    </div>
+    <div>
+      {{password}}
+    </div>
+    <button (click)=handleClick()>change name</button> -->
+
+    <input type="checkbox">
+    <label for="">Remember</label><br>
+
+    <button type="submit" [disabled]=loginForm.invalid>Login</button>
+
+    <p>don't have account? <a routerLink="/singup">sign-up</a></p>
+
+  </div>
+
+</form>
+<!-- <div class="div1">
+<form>
+    <div class="mb-3 ">
+       
+      <label for="exampleInputEmail1" class="form-label ">Email address</label>
+      <input type="email" class="form-control username" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control username" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input username" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div> -->

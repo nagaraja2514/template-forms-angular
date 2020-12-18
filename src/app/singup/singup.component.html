@@ -1,0 +1,59 @@
+<div class="div1">
+    <form name="loginForm" ngForm (ngSubmit)="handleForm()">
+        <h3>Annamacharya Institute of Technology & Sciences, Tirupati
+            (Autonomous) </h3>
+
+        <form class="form" action="#">
+            <div class="div2">
+
+                <input type="text" name='firstname' [(ngModel)]="deta.firstname" placeholder="Enter First Name">
+
+                <input type="text" name='lastname' [(ngModel)]="deta.lastname" placeholder="Enter Last Name"><br>
+
+                <input type="text" name='college' [(ngModel)]="deta.college" placeholder="Enter College">
+
+                <input type="text" name='mobilenumber' [(ngModel)]="deta.mobilenumber"
+                    placeholder="Enter Mobile Number"><br>
+
+                <label for="" class="gender1">Gender</label>
+                <select>
+                    <option value="">Select</option>>
+                    <option value="">Male</option>>
+                    <option value="">Female</option>>
+                    <option value="">Others</option>>
+                </select>
+                <label for="" class="gender2">Language</label>
+                <select>
+                    <option value="">Select</option>
+                    <option value="">Telugu</option>
+                    <option value="">English</option>
+                    <option value="">Tamil</option>
+                    <option value="">Hindi</option>
+                </select><br>
+
+                <input type="text" name="email" [(ngModel)]="deta.email" placeholder="Enter Email">
+
+                <input type="text" name="rollnumber" [(ngModel)]=deta.rollnumber placeholder="Enter Roll Number">
+
+                <input type="text" name="examination" [(ngModel)]=deta.examination
+                    placeholder="Enter center of examination">
+
+                <input type="text" name="city" [(ngModel)]=deta.city placeholder="Enter City">
+
+                <input type="text" name="username" [(ngModel)]=deta.username placeholder="Enter User Name">
+
+                <input type="text" name="reusername" [(ngModel)]=deta.reusername placeholder="Re-Enter User Name">
+
+                <input type="text" name="password" [(ngModel)]=deta.password placeholder="Enter Password">
+
+                <input type="text" name="confirmpassword" [(ngModel)]=deta.confirmpassword
+                    placeholder="Enter Confirm Password">
+
+            </div>
+
+        </form>
+        <input class="button" type="submit">
+        <p> You have account?<a routerLink="/login">login</a></p>
+    </form>
+
+</div>
