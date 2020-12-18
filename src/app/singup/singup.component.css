@@ -6,12 +6,20 @@
 }
 .div1{
     border: 2px green solid;
-   margin-left: 30%;
-   margin-right: 30%;
-   text-align: right;
+    position: absolute;
+     padding: 20px;
+     margin-left: 30%;
+      margin-right: 30%;
+   /* text-align: right; */
    border-radius: 10px;
-   width: 40%;
-   height: 30%;
+   /* width: 40%;
+   height: 40%; */
+   text-align: center;
+   
+   
+  
+   
+   
 }
 /* input{
     border-radius: 10px;
